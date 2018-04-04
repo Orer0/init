@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#sudo crontab -e
+#00 00 * * * /home/vagrant/04
+#changer les droits chmod 755 04
+
+original='8f111d100ea459f68d333d63a8ef2205'
+new=`md5sum /etc/crontab | cut -d ' ' -f1`
+
+if [ $original != $new ]
+then
+	echo "The file /etc/crontab has been modified" | mail -s 'File crontab' root
+fi

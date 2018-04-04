@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#sudo crontab -e
+#00 04 * * 01 /home/vagrant/02
+#changer les droits  chmod 755 02
+
+apt-get uptdate >> /var/log/uptdate_script.log 2>&1
+apt-get upgrade -y >> /var/log/uptdate_script.log 2>&1

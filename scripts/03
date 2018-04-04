@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ls -FS $1 | grep -v /

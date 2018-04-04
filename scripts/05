@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo apt-get install cowsay -y >> cowsay
+cowsay 42
