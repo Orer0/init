@@ -1,0 +1,1 @@
+ifconfig -a | grep ether | sed -e '1d' | sed -e '2,6 d' | cut -c 8-24

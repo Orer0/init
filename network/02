@@ -1,0 +1,1 @@
+ifconfig -a | grep inet | grep broadcast | cut -c 7-16
